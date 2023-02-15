@@ -10,7 +10,6 @@ function iniciarJuego() {
 
   do {
     nombre = prompt("Ingese su nombre por favor:");
-    alert("Gracias por jugar " + nombre + ". ¡Mucha suerte!");
 
     // mostramos los datos por consola
     console.log("----------------------------");
@@ -18,8 +17,14 @@ function iniciarJuego() {
     console.log(nombre);
     console.log("----------------------------");
 
-    //alert("El nombre ingresado no es válido, por favor intente nuevamente: " + nombre);
-  } while (isNaN(nombre) || nombre.length >= 3);
+
+    if (!(isNaN(nombre)) || !(nombre.length >= 3)){
+    alert("El nombre ingresado no es válido, por favor intente nuevamente: " + nombre);
+    }
+  } while (!(isNaN(nombre)) || !(nombre.length >= 3));
+
+
+  alert("Gracias por jugar " + nombre + ". ¡Mucha suerte!");
 
   return nombre;
 }
