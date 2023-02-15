@@ -9,8 +9,10 @@ function iniciarJuego() {
   let nombre;
 
   do {
-    nombre = prompt("Ingese su nombre por favor:");
+   
 
+    nombre = prompt("Ingese su nombre por favor:");
+ 
     // mostramos los datos por consola
     console.log("----------------------------");
     console.log("El jugador es:");
@@ -23,7 +25,7 @@ function iniciarJuego() {
     }
   } while (!(isNaN(nombre)) || !(nombre.length >= 3));
 
-
+  nombre = nombre.toUpperCase();
   alert("Gracias por jugar " + nombre + ". ¡Mucha suerte!");
 
   return nombre;
