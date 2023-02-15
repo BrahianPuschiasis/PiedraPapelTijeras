@@ -9,21 +9,21 @@ function iniciarJuego() {
   let nombre;
 
   do {
-   
-
     nombre = prompt("Ingese su nombre por favor:");
- 
+
     // mostramos los datos por consola
     console.log("----------------------------");
     console.log("El jugador es:");
     console.log(nombre);
     console.log("----------------------------");
 
-
-    if (!(isNaN(nombre)) || !(nombre.length >= 3)){
-    alert("El nombre ingresado no es válido, por favor intente nuevamente: " + nombre);
+    if (!isNaN(nombre) || !(nombre.length >= 3)) {
+      alert(
+        "El nombre ingresado no es válido, por favor intente nuevamente: " +
+          nombre
+      );
     }
-  } while (!(isNaN(nombre)) || !(nombre.length >= 3));
+  } while (!isNaN(nombre) || !(nombre.length >= 3));
 
   nombre = nombre.toUpperCase();
   alert("Gracias por jugar " + nombre + ". ¡Mucha suerte!");
