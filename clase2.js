@@ -74,6 +74,22 @@ function compararJugadas() {
 }
 
 const resultadoDePartida = compararJugadas()
+
+let resultadoFinal  =(a) =>{
+console.log(a);
+alert(a);
+
+
+if (a === "Una lástima, perdiste."){
+alert("Casi ganas! suerte para la proxima");
+
+}
+
+}
+
+resultadoFinal(resultadoDePartida);
+
+
 /* -------------------------------------------------------------------------- */
 /*                          CONSIGNA MESA DE TRABAJO                          */
 /* -------------------------------------------------------------------------- */
